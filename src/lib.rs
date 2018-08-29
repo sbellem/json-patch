@@ -83,14 +83,19 @@
 //! ```
 #![deny(warnings)]
 #![warn(missing_docs)]
+#![no_std]
 #[macro_use]
 extern crate serde_derive;
 #[cfg_attr(test, macro_use)]
 extern crate serde_json;
 
+extern crate sgx_tstd as std;
+
 use serde_json::{Map, Value};
 use std::error::Error;
 use std::{fmt, mem};
+use std::vec::Vec;
+use std::string::String;
 
 /// Representation of JSON Patch (list of patch operations)
 #[derive(Debug, Serialize, Deserialize, Clone, PartialEq)]

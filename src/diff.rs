@@ -1,4 +1,6 @@
 use serde_json::Value;
+use std::string::{ToString, String};
+use std::vec::Vec;
 
 struct PatchDiffer {
     path: String,
