@@ -16,23 +16,19 @@ nightly = []
 diff = ["treediff"]
 
 [dependencies]
-serde = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.0" }
-serde_derive = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.0" }
-serde_json = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.0" }
+serde = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.4" }
+serde_derive = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.4" }
+serde_json = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.4" }
 
-sgx_tstd = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.0" }
+sgx_tstd = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.4" }
+treediff = { git = "https://github.com/enigmampc/treediff-rs.git", rev = "sgx-v3.0.1-new", features = ["with-serde-json"], optional = true }
 
-[dependencies.treediff]
-git = "https://github.com/enigmampc/treediff-rs.git"
-rev = "sgx-v3.0.1"
-features = ["with-serde-json"]
-optional = true
 
 [dev-dependencies]
 rand = "0.5.0"
 
 [dev-dependencies.serde_json]
 git = "https://github.com/baidu/rust-sgx-sdk.git"
-rev = "v1.0.0"
+rev = "v1.0.4"
 version = "1.0.17"
 features = ["preserve_order"]
