@@ -81,7 +81,7 @@
 //! }));
 //! # }
 //! ```
-#![deny(warnings)]
+// #![deny(warnings)]
 #![warn(missing_docs)]
 #![no_std]
 #[macro_use]
