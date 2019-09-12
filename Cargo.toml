@@ -16,8 +16,8 @@ nightly = []
 diff = ["treediff"]
 
 [dependencies]
-serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "407aaaa2558dda5c2367d57ba40324c52cf9acc2" }
-serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "407aaaa2558dda5c2367d57ba40324c52cf9acc2" }
+serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "enigma-1.0.8" }
+serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "enigma-1.0.8" }
 
 sgx_tstd = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.8" }
 
