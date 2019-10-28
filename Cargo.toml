@@ -16,12 +16,12 @@ nightly = []
 diff = ["treediff"]
 
 [dependencies]
-serde = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "bc160eaaa364448e0831c6fbfc9c77cbf59f09db" }
-serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx.git", rev = "bc160eaaa364448e0831c6fbfc9c77cbf59f09db" }
+serde = { git = "https://github.com/mesalock-linux/serde-sgx.git" }
+serde_derive = { git = "https://github.com/mesalock-linux/serde-sgx.git" }
 
 sgx_tstd = { git = "https://github.com/baidu/rust-sgx-sdk.git", rev = "v1.0.9" }
 
-serde_json = { git = "https://github.com/enigmampc/serde-json-sgx.git", rev = "1.0.39-sgx-1.0.9" }
+serde_json = { git = "https://github.com/mesalock-linux/serde-json-sgx.git", rev = "sgx_1.0.9" }
 treediff = { git = "https://github.com/enigmampc/treediff-rs.git", rev = "3.0.1-sgx-1.0.9", features = ["with-serde-json"], optional = true }
 
 [dev-dependencies]
